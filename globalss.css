@@ -1,0 +1,203 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container {
+  text-align: center;
+}
+
+.home-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.home-container p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  background-color: white;
+  color: #185a9d;
+  font-weight: bold;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #f2f2f2;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 300px;
+}
+
+.form-container input {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.dashboard {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/*DASHBOARD STYLES*/
+
+.dashboard {
+  padding: 30px;
+  color: white;
+  min-height: 100vh;
+}
+
+.dash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.logout-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background-color: #ff6666;
+}
+
+/* Dashboard content grid */
+.dash-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+/* Cards */
+.profile-card,
+.announcement-card,
+.grades-card {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.profile-card h2,
+.announcement-card h2,
+.grades-card h2 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+.announcement-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.announcement-card li {
+  margin-bottom: 8px;
+}
+
+.grades-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.grades-card th,
+.grades-card td {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px;
+  text-align: left;
+}
+
+.grades-card th {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Schedule section */
+.schedule-section {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.schedule-section h2 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+.schedule-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.schedule-section li {
+  margin-bottom: 6px;
+}
+
